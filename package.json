@@ -1,0 +1,11 @@
+{
+  "name": "cloudflare-images-ts",
+  "version": "1.0.0",
+  "description": "TODO",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "LOVE LI Studios",
+  "license": "MIT"
+}
