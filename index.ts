@@ -2,6 +2,12 @@ const UNEXPECTED_RESPONSE = "Unexpected response from Cloudflare Images";
 
 export type CloudflareImagesError = { code: number; message: string };
 
+export const isCloudflareImagesError = (
+  error: unknown
+): error is CloudflareImagesError =>
+  (error as CloudflareImagesError).code !== undefined &&
+  (error as CloudflareImagesError).message !== undefined;
+
 type UploadImageFileResponse = {
   success: boolean;
   errors: CloudflareImagesError[];
