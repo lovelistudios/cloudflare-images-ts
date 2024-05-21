@@ -1,5 +1,5 @@
 {
-  "name": "cloudflare-images-ts",
+  "name": "@lovelistudios/cloudflare-images-ts",
   "version": "1.0.0",
   "description": "TODO",
   "main": "index.ts",
