@@ -1,12 +1,6 @@
 const UNEXPECTED_RESPONSE = "Unexpected response from Cloudflare Images";
 
-export type CloudflareImagesError = { code: number; message: string };
-
-export const isCloudflareImagesError = (
-  error: unknown
-): error is CloudflareImagesError =>
-  (error as CloudflareImagesError).code !== undefined &&
-  (error as CloudflareImagesError).message !== undefined;
+type CloudflareImagesError = { code: number; message: string };
 
 type UploadImageFileResponse = {
   success: boolean;
@@ -14,7 +8,7 @@ type UploadImageFileResponse = {
   result: UploadImageFileResult | {};
 };
 
-export type UploadImageFileResult = { id: string; uploaded: Date };
+type UploadImageFileResult = { id: string; uploaded: Date };
 
 const isUploadImageFileResult = (
   result: UploadImageFileResult | {}
