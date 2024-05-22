@@ -8,7 +8,7 @@ type UploadImageFileResponse = {
   result: UploadImageFileResult | {};
 };
 
-type UploadImageFileResult = { id: string; uploaded: Date };
+export type UploadImageFileResult = { id: string; uploaded: Date };
 
 const isUploadImageFileResult = (
   result: UploadImageFileResult | {}
