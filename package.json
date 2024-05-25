@@ -1,6 +1,6 @@
 {
   "name": "@lovelistudios/cloudflare-images-ts",
-  "version": "1.0.7",
+  "version": "2.0.0",
   "description": "TODO",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
